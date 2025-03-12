@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-success">
+    <div class="container-fluid bg-success d-flex align-items-center justify-content-center min-vh-100 h-100">
+        <div class="bg-light p-5 rounded shadow-lg text-center">
+            <h1 class="fw-bold font-monospace mb-4">EMPLOYEE INFORMATION<br>SYSTEM</h1>
+            <input class="mb-4 control-form w-75" type="text" id="search" placeholder="Search">
+            <button type="button" class="float-end btn btn-outline-secondary font-monospace" data-bs-toggle="modal"
+                data-bs-target="#myModal">
+                Add
+            </button>
+
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th class="font-monospace">Employee ID</th>
+                        <th class="font-monospace">Last Name</th>
+                        <th class="font-monospace">First Name</th>
+                        <th class="font-monospace">Position</th>
+                        <th class="font-monospace">Office</th>
+                        <th class="font-monospace">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10203001</td>
+                        <td>Ban-o</td>
+                        <td>Alyssa</td>
+                        <td>Software Development</td>
+                        <td> IT Department</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>10203002</td>
+                        <td>Banog</td>
+                        <td>Kierra</td>
+                        <td>Sales Representative</td>
+                        <td>New York Brance</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203003</td>
+                        <td>Ala</td>
+                        <td>Ren</td>
+                        <td>HR Manager</td>
+                        <td>Headquarters</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203004</td>
+                        <td>Castro</td>
+                        <td>Lloyd</td>
+                        <td>Accountant</td>
+                        <td>Main Office</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203005</td>
+                        <td>Atmosfera</td>
+                        <td>PJ</td>
+                        <td>IT Specialist</td>
+                        <td>Remote Work</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203006</td>
+                        <td>Turqueza</td>
+                        <td>Aila</td>
+                        <td>Accountant</td>
+                        <td>Headquarters</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203007</td>
+                        <td>Domaoal</td>
+                        <td>Bella</td>
+                        <td>HR Manager</td>
+                        <td>IT Department</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203008</td>
+                        <td>Sanchez</td>
+                        <td>Sotero</td>
+                        <td>IT Support Specialist</td>
+                        <td>New York Branch</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203009</td>
+                        <td>Castaneda</td>
+                        <td>Shayne</td>
+                        <td>Sales Representative</td>
+                        <td>Main Office</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10203010</td>
+                        <td>Tamo</td>
+                        <td>Kurt</td>
+                        <td>Software Development</td>
+                        <td>Remote Work</td>
+                        <td>
+                            <button type="button" class="float-start text-light btn btn bg-success me-3">Edit</button>
+                            <button type="button" class="float-end text-light btn btn bg-secondary">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header font-monospace">
+                            <h4 class="modal-title">EMS</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body bg-success">
+                            <body class="bg-success" id="add_employee">
+                                <div class="container-fluid bg-success d-flex align-items-center justify-content-center min-vh-100 h-100">
+                                    <div class="bg-light p-5 rounded shadow-lg text-center">
+                                        <h1 class="fw-bold  font-monospace mb-4">ADD EMPLOYEE</h1>
+                                        <input class="mb-4 control-form w-75" type="text" id="employeeid"
+                                            placeholder="Enter EmployeeID">
+                                        <input class="mb-4 control-form w-75" type="text" id="lastname"
+                                            placeholder="Enter Lastname">
+                                        <input class="mb-4 control-form w-75" type="text" id="firstname"
+                                            placeholder="Enter Firstname">
+                                        <input class="mb-4 control-form w-75" type="text" id="position"
+                                            placeholder="Enter Position">
+                                        <input class="mb-4 control-form w-75" type="text" id="office"
+                                            placeholder="Enter Office"><br>
+                                        <button type="button"
+                                            class="btn btn-outline-secondary font-monospace">Save</button>
+
+                                        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+                            </body>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
